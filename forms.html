@@ -25,7 +25,7 @@
         <br>
         <h1>Gender:</h1>
         <label for="radio">Male</label>
-        <input type="radio" id="radio" name="gender" value="Male" >
+        <input type="radio" id="radio" name="gender" value="male" >
          <label for="radio">Female</label>
         <input type="radio" id="radio" name="gender" value="female" >
          <label for="radio">Other</label>
@@ -55,10 +55,55 @@
     <br>
     <br>
  
-
     <hr>
     <h2>Academic Infomation</h2>
+    <label for="courses">Select Your Course:</label>
+    <select id="courses" name="course">
+        <option value="">Choose a course</option>
+        <option value="HTML">HTML</option>
+        <option value="CSS">CSS</option>
+         <option value="javascript">javascript</option>
+    </select>
+    <br><br>
 
+    <p>Extracurricular Interests:</p>
+    <label for="activities">Sports</label>
+    <input type="checkbox" name="interest"  id="activities" value="Sports">
+      <label for="activities">Music & Arts</label>
+    <input type="checkbox" name="interest"  id="activities" value="Music & Arts">
+      <label for="activities">Technology Clubs</label>
+    <input type="checkbox" name="interest"  id="activities" value="Volunteering">
+      <label for="activities">Technology Clubs</label>
+    <input type="checkbox" name="interest"  id="activities" value="Technology Clubs">
+    <br>
+    <br>
+    <hr>
+
+    <h2>Create Your Account</h2>
+    <label for="password"> Create a Password:</label>
+    <input type="password" id="password">
+    <br><br>
+    <!-- dropdown -->
+     <label for="question">Security Question:</label>
+     <select name="question" id="question">
+        <option value="">What was your first pet's name?</option>
+        <option value="dog">Dog</option>
+         <option value="cat">Cat</option>
+          <option value="puppy">Puppy</option>
+          <option value="parrot">Parrot</option>
+     </select>
+     <br>
+     <br>
+
+     <label for="question">Security Answer:</label>
+     <input type="text">
+     <br><br>
+     <input type="checkbox" id="checkbox" required>
+     <label for="checkbox">I agree to the Terms and Conditions:</label>
+     <br><br>
+     <hr>
+     <input type="submit" value="Register">
+      <input type="reset" value="Clear Form">
     </form>
 </body>
 </html>
