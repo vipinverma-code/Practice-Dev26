@@ -1,0 +1,15 @@
+h1{
+    background-color: orange;
+    height: 300px;
+    width: 200px;
+    border: 15px solid green;
+    padding: 5px;
+    margin: 60px;
+   
+
+}
+
+h2{
+    background-color: pink;
+    border: 5px solid blue;
+}
