@@ -1,0 +1,41 @@
+.container{
+    height: 800px;
+    display: flex;
+    background-color: burlywood;
+    flex-direction: row; 
+    /* flex-direction: column; */
+    justify-content: center;
+    /* justify-content: space-around; */
+    align-items: center;
+    /* flex-wrap: wrap; */
+    /* by defualt nowrap hotai hai value */
+
+    gap: 5px;
+   
+}
+
+.box{
+    height: 100px;
+    width: 100px;
+    /* margin: 5px; */
+}
+
+.first{
+    background-color: aqua;
+    /* flex-grow: 1; */
+
+}
+
+.second{
+    background-color: blue;
+    flex-shrink: 2;
+}
+
+.third{
+    background-color: chocolate;
+}
+
+.fourth{
+    background-color: crimson;
+     align-self: flex-start;
+}
