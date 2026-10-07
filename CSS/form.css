@@ -1,0 +1,41 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    background-color:rgb(226, 229, 232);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:100vh;
+    box-sizing: border-box;
+}
+
+.container{
+    height: 400px;
+    width: 600px;
+    background-color: white;
+    padding: 60px;
+}
+
+h1{
+    /* background-color: aqua; */
+    text-align: center;
+    margin: 10px;
+    color: rgb(138, 138, 228);
+}
+
+button{
+    height: 15px;
+    width: 100%;
+    display: block;
+    padding: 15px;
+    margin: 15px;
+    background-color: rgb(144, 144, 211);
+
+}
+
+input{
+    width: 100%;
+    padding: 15px;
+}

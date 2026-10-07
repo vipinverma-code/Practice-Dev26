@@ -1,0 +1,40 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: white;
+    font-size: 25px;
+}
+
+body{
+    background-color: black;
+}
+
+.container{
+    display: grid;
+    grid-template-rows: 1fr 1fr ;
+    grid-template-columns:1fr 1fr ;
+    gap: 10px;
+    padding: 10px;
+    height: 400px;
+    width: 400px;
+    background-color: cadetblue;
+
+    /* when we fix the height and width of container , then grid-items will be overflow  */
+}
+
+.First{
+    background-color: orange;
+}
+
+.Second{
+    background-color: green;
+}
+
+.Third{
+    background-color: red;
+}
+
+.Fourth{
+    background-color: brown;
+}
