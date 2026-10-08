@@ -1,0 +1,48 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container{
+  height: 200px;
+  width: 800px;
+  background-color: orange;  
+  display: grid;
+  gap: 5px;
+
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr;
+}
+
+img{
+    height: 100%;
+    width: 100%;
+}
+
+/* now adding responsiveness */
+
+@media screen and (max-width:900px){
+    .container{
+        height: 400px;
+        width: 400px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+}
+@media screen and (max-width:600px){
+    .container{
+        height: 600px;
+        width: 800px;
+        grid-template-columns: 1fr ;
+        grid-template-rows: 1fr 1fr 1fr 1fr ;
+    }
+}

@@ -1,10 +1,12 @@
+/* default for mobile first view */
+
 .container{
     height: 400px;
     width: 400px;
     font-size: 50px;
     background-color: aqua;
 }
-
+/* 
 @media screen and (max-width:600px){
     .container{
         height: 300px;
@@ -20,7 +22,7 @@
         width: 350px;
         background-color: blue;
     }
-}
+} */
 
 /* @media screen and (min-width:700px){
     .container{
@@ -30,3 +32,26 @@
     }
 } */
 
+
+
+/* Mobile based configuration */
+
+/* for tablet */
+
+@media screen and (min-width:600px){
+    .container{
+        background-color: rgb(96, 160, 95);
+        height: 400px;
+        width: 600px;
+    }
+}
+/* for laptop */
+@media screen and (min-width:900px){
+    .container{
+        background-color: rgb(160, 133, 95);
+        height: 400px;
+        width: 600px;
+    }
+}
+
+/* In real world you are moving with the help of mobile first view approach */
