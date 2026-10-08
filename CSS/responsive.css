@@ -1,0 +1,32 @@
+.container{
+    height: 400px;
+    width: 400px;
+    font-size: 50px;
+    background-color: aqua;
+}
+
+@media screen and (max-width:600px){
+    .container{
+        height: 300px;
+        width: 300px;
+        background-color: brown;
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width:900px){
+    .container{
+        height: 200px;
+        width: 350px;
+        background-color: blue;
+    }
+}
+
+/* @media screen and (min-width:700px){
+    .container{
+        background-color: rgb(96, 160, 95);
+        height: 400px;
+        width: 600px;
+    }
+} */
+
