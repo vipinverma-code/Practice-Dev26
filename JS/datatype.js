@@ -122,15 +122,12 @@ let c=10;
 let d=c;
 d=20;
 console.log(d);
+let obj1={
+    name:"Mohan",
+    age:20
+}
 
-
-
-
-
-
-
-
-
-
-
-
+let obj2= obj1;
+obj2.name="Rohan";
+console.log(obj1);
+console.log(obj2);
