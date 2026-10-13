@@ -57,3 +57,17 @@ console.log("Vipin" + 10 + "Verma");
 
 // now we are coming to the date topic
 
+const now= new Date();
+console.log(now);
+console.log(now.toString());
+console.log(now.toLocaleString());
+console.log(now.getDay());
+console.log(now.getMonth());
+
+// days: Mon-tue(1 based)
+// Month: 0 1
+
+const date= new Date(2026,9,13,1,10,25);
+console.log(date.toString());
+
+
