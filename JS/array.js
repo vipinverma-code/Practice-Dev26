@@ -95,29 +95,38 @@
 // // only difference is i can join it with the , _ , which i need, but in to string it can join with the , only
 // console.log(arr4.join("_"));
 
-const arr=[10,20,40];
-console.log(arr.indexOf(10));
-console.log(arr.includes(20));
+// const arr=[10,20,40];
+// console.log(arr.indexOf(10));
+// console.log(arr.includes(20));
 
 // Now do sorting of array elements
 
-const names=["Alice", "Rohit", "bob","Mohit", "Charlie"];
-names.sort();
+// const names=["Alice", "Rohit", "bob","Mohit", "Charlie"];
+// names.sort();
 // names.reverse(); descending order
-console.log(names);
+// console.log(names);
 
-const arr2=[10,60,80,125];
+// const arr2=[10,60,80,125];
 // arr2.sort(); in case of numbers it gives wrong output so use function (a,b)=> a-b; for ascending and (a,b)=> b-a for descending order
 // arr2.sort((a,b)=> a-b); for ascending order
 // arr2.sort((a,b)=> b-a);  descendng order
-console.log(arr2);
+// console.log(arr2);
 
 
 // in the case of heterogeneous data in the array , it treated and compare with the character by character
 
-const arr3=[]
+// const arr3=[121,10,"Vipin", "Swastika"];
+// // arr3.sort((a,b) => a-b);
+// arr3.sort((a,b)=>b-a);
+// console.log(arr3);
 
 
+// flatening the arrays 
+
+const arr3=[10,30,40,50,[10,20,["Vipin Verma"]]];
+// console.log(arr3[4][2]);
+const arr4=arr3.flat(Infinity);
+console.log(arr4);
 
 
 
