@@ -179,23 +179,24 @@
 // Internally arrays are stored in the form of object.
 // keys string aur symbol dono ho skti hai.
 const sym = Symbol("id");
-const user= {
-    name:"Vipin Verma",
-    age: 20,
-    emailId: "vipin@gmail.com",
-    amount: 3400,
-    address: {
-        city:"lmp",
-        pincode:"262701"
-    },
+console.log(sym);
+// const user= {
+//     name:"Vipin Verma",
+//     age: 20,
+//     emailId: "vipin@gmail.com",
+//     amount: 3400,
+//     address: {
+//         city:"lmp",
+//         pincode:"262701"
+//     },
 
-    0:"You don't give up",
-    1:"Your mother waiting for your first success",
-    2:"do hard work, believe rkho confidence mt todo ho jayega",
-    [sym]: "Hello , how are you"
-}
+//     0:"You don't give up",
+//     1:"Your mother waiting for your first success",
+//     2:"do hard work, believe rkho confidence mt todo ho jayega",
+//     [sym]: "Hello , how are you"
+// }
 
-console.log(user["0"]);
-console.log(user["1"]);
-console.log(user['2']);
-console.log(user[sym]);
+// console.log(user["0"]);
+// console.log(user["1"]);
+// console.log(user['2']);
+// console.log(user[sym]);
