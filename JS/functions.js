@@ -33,12 +33,33 @@
 
 // difference between spread and rest operator
 
-const arr=[20,30,40,50,80];
-const [first,second,...num]=arr;
-console.log(arr);
+// const arr=[20,30,40,50,80];
+// const [first,second,...num]=arr;
+// console.log(arr);
 // here the rest operator is used.
 
-const arr2=[10,50,"Vipin","Sanskar"];
-const arr3=[...arr,...arr2];
-console.log(arr3);
+// const arr2=[10,50,"Vipin","Sanskar"];
+// const arr3=[...arr,...arr2];
+// console.log(arr3);
 // here the spread operator is used.
+
+
+// another way  to create functions.
+
+// function: expression
+// console.log(addNumber(20,35));
+
+// const addNumber = function(num1,num2){
+//     return num1+num2;
+// }
+// console.log(addNumber(20,35));
+// it gives error which is Reference error , tells cannot access addNumber before initialization
+
+// console.log(addNumber(30,25));
+
+function addNumber(num1,num2){
+    return num1+num2;
+}
+// defining the function in this way , it gives output due to hoisting concept.
+// console.log(addNumber(30,25));
+
