@@ -57,9 +57,91 @@
 
 // console.log(addNumber(30,25));
 
-function addNumber(num1,num2){
-    return num1+num2;
-}
+// function addNumber(num1,num2){
+//     return num1+num2;
+// }
 // defining the function in this way , it gives output due to hoisting concept.
 // console.log(addNumber(30,25));
 
+// arrow function 
+
+// const addNumber = (num1,num2)=>{
+//     return num1+num2;
+// }
+// console.log(addNumber(5,8));
+
+// const addNumber=(num1,num2)=> num1+num2;
+// console.log(addNumber(5,8));
+
+// square of a number with the arrow function
+
+// const squarenumber= n =>n*n;
+// console.log(squarenumber(5));
+
+// if we have single parameter, no need of this ().
+
+// const greeting = ()=>{
+//     let user={
+//         name:"Vipin Verma",
+//         age:22,
+//     }
+//     return user;
+  
+// }
+// console.log(greeting());
+
+// const greeting = ()=>({name:"Vipin", college:"bbd"});
+// console.log(greeting());
+
+
+// IIFE (Immediately Invoked function )
+
+// (()=>{
+//     console.log("Hello , it's good time to work on your skills");
+// })();
+
+
+
+//Callback function: a function which is passed as an argument to another function.
+// function dinner(){
+//     console.log("It's a time to having dinner");
+// }
+// function greet(callback){
+//     console.log("Hello , good evening");
+//     callback();
+// }
+
+// greet(dinner); 
+
+
+// as a normal useCallback(
+// blinkit 
+function blinkitOrderPlaced(){
+    console.log("we have started pcking your food")
+}
+function zomatoOrderPlaced(){
+    console.log("we have started the preparing your food");
+}
+function payment(amount,callback){
+    console.log(`${amount} payment has initialized`);
+    console.log("Payment is received");
+    callback();
+}
+
+payment(500,blinkitOrderPlaced);
+
+
+
+// Hoisting concept-
+
+// console.log("Tuition timing can be done");
+// function Tuition(){
+//     console.log("it's good to be haapy");
+// }
+// Tuition();
+
+
+time();
+var time=function Tuition(){
+    console.log("it's good to be haapy");
+}
