@@ -1,2 +1,2 @@
-
-console.log(first,second);
+const uniqueEmail = [... new Set(email)];
+// console.log(uniqueEmail);
