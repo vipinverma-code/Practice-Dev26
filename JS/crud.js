@@ -58,3 +58,5 @@ const element=document.getElementById("first");
 // element.remove();
 console.log(element);
 
+// innerHTML , textContent, i
+
