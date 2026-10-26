@@ -56,21 +56,45 @@
 
 // abhi bhi ek issue hai ki 5 baar hme eventlistener use krna pd rha hai 5 element ke liye
 
+// const grandparent = document.getElementById("grandparent");
+// grandparent.addEventListener('click',(e)=>{
+//     console.log("Grandparent is clicked")
+// },true);
+
+// const parent = document.getElementById('parent');
+// parent.addEventListener('click',(e)=>{
+//     console.log("Parent is clicked");
+// },false)
+
+// const child = document.getElementById("child");
+// child.addEventListener('click',(e)=>{
+//     console.log("child is clicked");
+// },true);
+
+
+
 const grandparent = document.getElementById("grandparent");
-grandparent.addEventListener('click',()=>{
+grandparent.addEventListener('click',(e)=>{
     console.log("Grandparent is clicked")
+    console.log(e);
+    console.log(e.target);
+    e.stopPropagation();
+
 },false);
 
 // const parent = document.getElementById('parent');
-// parent.addEventListener('click',()=>{
+// parent.addEventListener('click',(e)=>{
 //     console.log("Parent is clicked");
-// })
+//     console.log(e);
+    
+//     e.stopPropagation();
+// },false)
 
 // const child = document.getElementById("child");
-// child.addEventListener('click',()=>{
+// child.addEventListener('click',(e)=>{
 //     console.log("child is clicked");
-// });
-
-
+//     console.log(e);
+//     e.stopPropagation();
+// },false);
 
 
