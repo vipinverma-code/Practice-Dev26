@@ -24,10 +24,27 @@
 
 
 
-fetch("https://api.github.com/users")
-.then((response)=>{
-    return response.json();
-})
-.then((data)=>{
-    console.log(data);
-})
+// fetch("https://api.github.com/users")
+// .then((response)=>{
+//     return response.json();
+// })
+// .then((data)=>{
+//     console.log(data);
+// })
+
+
+// how to get the data or fetch the data from the api  with the help of async await method
+
+// const response = fetch("https://api.github.com/users");
+// const data = response.json();
+// response.json is not a function
+// console.log(data);
+async function github(){
+    const response = await fetch("https://api.github.com/users");
+const data = await response.json();
+console.log(data);
+}
+github();
+
+console.log("Build disciline it takes only 6 months or 1 year to change everything");
+
