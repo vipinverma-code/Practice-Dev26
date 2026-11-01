@@ -98,7 +98,6 @@ class User extends Car{
        
         this.username=username;
     }
-
     sayHi(){
         return (`the user name is ${this.username} `)
     }
