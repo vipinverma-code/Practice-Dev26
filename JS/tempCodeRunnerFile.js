@@ -1,2 +1,4 @@
-const uniqueEmail = [... new Set(email)];
-// console.log(uniqueEmail);
+function greet(name,name){
+//     console.log(name,name);
+// }
+// greet();

@@ -102,6 +102,6 @@ class User extends Car{
         return (`the user name is ${this.username} `)
     }
 }
-
 const user1 = new User("Vipin","Kia","Blue","Mahindra");
 console.log(user1);
+
