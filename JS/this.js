@@ -3,8 +3,6 @@
 
 // strict mode vs non strict mode
 
-  
-
 // In non-strict mode 
 
 
@@ -96,25 +94,25 @@
 // incrementAge.apply(user,[25,"Shobhit"]);
 
 
-function greet(){
-    console.log(`hi ${this.name}`);
-}
+// function greet(){
+//     console.log(`hi ${this.name}`);
+// }
 
-function incrementAge(value,name){
-    this.age+=value;
-    this.name=name;
-    console.log(this.age);
-    console.log(this.name);
-}
-const user = {
-    name:"Rohit",
-    age:30,
-}
+// function incrementAge(value,name){
+//     this.age+=value;
+//     this.name=name;
+//     console.log(this.age);
+//     console.log(this.name);
+// }
+// const user = {
+//     name:"Rohit",
+//     age:30,
+// }
 
-const user2={
-    name:"Mohit",
-    age:10,
-}
+// const user2={
+//     name:"Mohit",
+//     age:10,
+// }
 
 // greet.call(user);
 // greet.call(user2);
@@ -127,14 +125,99 @@ const user2={
 // incrementAge.apply(user2,[8,"Shubham"]);
 
 
-const incr=incrementAge.bind(user,10,"Shyam");
-incr();
+// const incr=incrementAge.bind(user,10,"Shyam");
+// incr();
 
 
 
+// class
+
+// class Person{
+//     constructor(name,age){
+//         this.name=name;
+//         this.age=age;
+//     }
+// }
+
+// const p1 = new Person("Vipin", 22);
+// console.log(p1);
+
+
+// Arrow Function: this doesn't exist for arrow function.
+// "use strict"
+// const greet1 = ()=>{
+//     console.log(this);
+// }
+// greet1();
+
+// 'use strict'
+
+// const user = {
+//     name: "Rohit",
+//     greet: function (){
+//         const that = this;
+//         function meet(){
+//             console.log(that);
+
+//         }
+//         meet();
+//     }
+// }
+
+// user.greet();
+
+
+// "use strict"
+
+// const stopWatch = {
+//     second:0,
+//     start: function(){
+//         setInterval(()=>{
+//             this.second++;
+//             console.log(this.second);
+//         },1000);
+//     }
+// };
+
+// stopWatch.start();
 
 
 
+// const user = {
+//     name: "Vipin Verma",
+//     greet: ()=>{
+//         console.log(this);
+//     }
+// }
+
+// user.greet();
+
+// we know this keyword doesn't exist for the arrow function , so it searches outside that scope , lexical environment , this return an empty object  window object in browser.
+
+
+// now let's see how this keyword work with the dom 
+
+// const button= document.getElementById("first");
+// // button.addEventListener('click',function(){
+// //     console.log(this);
+// // });
+
+// button.addEventListener('click',()=>{
+//     console.log(this);
+// })
+
+
+// this keyword: Global Scope in Node Js : {} object
+// Windows: window object
+// function : this keyword , if someone invoked the method or function , this will point
+// Normal function : when no one is invoking it,
+// Non strict : Global object for node and browser
+// Strict mode : undefined in node js 
+// arrow function: I takes this from its lexical environment
+function greet(){
+    console.log(this);
+}
+greet();
 
 
 
