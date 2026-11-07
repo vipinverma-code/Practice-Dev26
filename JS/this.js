@@ -212,13 +212,14 @@
 // function : this keyword , if someone invoked the method or function , this will point
 // Normal function : when no one is invoking it,
 // Non strict : Global object for node and browser
-// Strict mode : undefined in node js 
+// Strict mode : undefined in node js    
 // arrow function: I takes this from its lexical environment
-function greet(){
-    console.log(this);
-}
-greet();
+// function greet(){
+//     console.log(this);
+// }
+// greet();
 
 
 
-
+'use strict'
+console.log(this);
