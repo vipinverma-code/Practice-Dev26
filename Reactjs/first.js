@@ -7,7 +7,7 @@
 // element1.style.backgroundColor="orange";
 // element1.style.color="white";
 
-const { createElement } = require("react");
+// const { createElement } = require("react");
 
 // const { createElement } = require("react");
 
@@ -95,10 +95,15 @@ const { createElement } = require("react");
 
 const element1=React.createElement("h1",{className:"element",id:"first", style:{backgroundColor:"chocolate",color:"white"}},"hello , do work consistently");
 const element2=React.createElement("h2",{className:"element",id:"second", style:{backgroundColor:"cornsilk",color:"white"}},"hello , do work consistently with confidence and patience");
-console.log(element1);
 
-const parent=document.getElementById("root");
-ReactDOM.render(element1,parent);
+const div= React.createElement('div',null,element1,element2);
+console.log(div);
+
+const root= ReactDOM.createRoot(document.getElementById('root'));
+root.render(div);
+
+// const parent=document.getElementById("root");
+// ReactDOM.render(element1,parent);
 
 
 
@@ -106,17 +111,17 @@ ReactDOM.render(element1,parent);
 
 // Original React ANd ReactDOM Means
 
-const React={
-    createElement: function(type,props,children){
-        return {
-            type:type,
-            props:{
-                ...props,
-                children:children
-            }
-        }
-    }
-}
+// const React={
+//     createElement: function(type,props,children){
+//         return {
+//             type:type,
+//             props:{
+//                 ...props,
+//                 children:children
+//             }
+//         }
+//     }
+// }
 
 // react only tells the ui structure .
 
