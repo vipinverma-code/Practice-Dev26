@@ -59,10 +59,40 @@
 
 
 
-const courses=["HTML", "CSS","JS","React"]
-const element= <ul>
-    {courses.map((course,idx)=><li>{course}</li>) }
-</ul>
-const root=ReactDOM.createRoot(document.getElementById('root'));
-root.render(element);
+// const courses=["HTML", "CSS","JS","React"]
+// const element= <ul>
+//     {courses.map((course,idx)=><li>{course}</li>) }
+// </ul>
+// const root=ReactDOM.createRoot(document.getElementById('root'));
+// root.render(element);
+
+
+// Props in React are the inputs which are passed from a parent component to a child component
+
+// function Child(props){
+//     return(
+//         <h1>Hello {props.name}</h1>
+//     )
+// }
+
+// function Parent(){
+//     return <Child name="Vipin"/>;
+
+// }
+
+// export default Parent;
+
+
+
+// function App(props){
+//     return(
+//         <h1 style={props.style}>I am {props.name}doing good in {props.age}</h1>
+//     )
+// }
+
+// const element1=<App name={"Vipin Verma"} age={30} style={{ backgroundColor:"orange",color:"white" }}/>
+
+// const root= ReactDOM.createRoot(document.getElementById('root'));
+// root.render(element1);
+
 
