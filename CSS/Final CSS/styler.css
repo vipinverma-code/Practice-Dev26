@@ -1,0 +1,78 @@
+/* Element Selector / tag Selector */
+
+
+/* h1{
+    background-color: pink;
+    font-size: 30px;
+} */
+
+/* Id selector*/
+/* #exercise{
+    background-color: blue;
+} */
+
+
+/* class selector is used for grouping multiple elements , it can be repeated in a webpage */
+
+/* 
+.third{
+    background-color: green;
+} */
+
+/* group selector */
+
+/* h1,h5,.do{
+    background-color: chocolate;
+} */
+
+/* rgb and rgba here a represents opacity */
+
+/* 
+h1{
+    background-color: rgba(32, 146, 146, 0.3);
+}
+/* hex value */
+
+/* h2{
+    background-color: #ffff00;
+}
+
+h4{
+    background-color: hsl(120, 50%, 50%);
+}  */
+
+/* fonts in css */
+/* common units that are used for css. */
+/* em :- element ke parent ke basis per uska size  */
+
+/* ul{
+    font-size: 20px;
+
+} */
+
+/* li{
+    /* font-size: 1em; */
+    /* font-size:50%; */
+
+
+/* rem iska means font-size jo hoga root element like html ke basis per hoga  */
+/* html{
+
+
+    font-size: 10px;
+}
+
+h2{
+    font-size: 4rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight:  900;
+    font-style: italic;
+
+    
+} 
+
+
+
+
+
+
