@@ -1,0 +1,78 @@
+/* Block level elements */
+
+/* elements which takes the full width of container are called block elements like div , h1, p,  */
+
+/* Inline elements: elements which takes only content width are called Inline elements  like anchortag, span*/
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+
+
+
+
+/* here span is an inline element , it takes the width of its content */
+
+h1{
+    background-color: brown;
+    padding: 20px;
+    margin: 20px;
+    width: 200px;
+    height: 200px
+
+    /* block level element : everthing is applied */
+}
+
+
+
+/* here h1 is a block elements */
+
+h2{
+    margin: 20px;
+}
+
+span{
+    background-color: blue;
+    width: 400px;
+    height: 400px;
+    padding: 10px;
+    /* padding is applied from all sides */
+    /* width and height are ignored  */
+    margin:20px;
+    /* vertical margin not applied */
+    /* horizontal margin is applied */
+}
+
+
+
+h4{
+    display: inline-block;
+    margin: 20px;
+    padding: 25px;
+    background-color: bisque;
+    width: 200px;
+    height: 400px;
+    /* width, height, margin,padding all are allowed in inline-block */
+
+    
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
